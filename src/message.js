@@ -1,16 +1,9 @@
+import React from 'react'
 
-import React from 'react';
-
-function Message(props){
-    return(
+export function Message(props){
+    return (
         <div>
-            <button onClick={()=>
-               <h1>{props.msg}</h1>
-            }>
-                Message
-            </button>
+            <h4>Have a Good {props.v1}</h4>
         </div>
-    );
+    )
 }
-
-export default Message;

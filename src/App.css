@@ -1,7 +1,11 @@
 .box{
-  background-color: lightgreen;
+  background-color: lightblue;
 }
 
 .dayLight{
-  background-color: lightyellow;
+  color: yellow;
+}
+
+.container{
+  text-align: center;
 }

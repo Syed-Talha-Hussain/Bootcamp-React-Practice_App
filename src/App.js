@@ -1,38 +1,19 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Dinner from './Dinner.js';
-import Message from './message.js'
+import Dinner from './dinner';
+import State from './state';
 
 function App() {
-
-  let [count, setcount] = useState(1);
-  let [isDay, setDay] = useState(false)
-
   return (
-    <div className ='box'>
+    <div className="container">
 
-        <h1>It is {isDay ? 'Day' : 'Night'}</h1>
-
-        <Dinner dish="Chicken Biryani" sweetDish="Kheer"/>
-
-        <Dinner dish="Chicken Karahi" sweetDish="Custard"/>
-        
-        <Dinner dish="Chicken Tikka" sweetDish="Kulfi"/>
-        
-      <h3>Value of Counter Variable: {count}</h3>
-      
-      <button onClick={()=>
-      setcount(++count)
-      }>
-      Update Counter
-      </button>
-
-      <Message msg="Hi! I am Talha"/> 
-
-      <button onClick={()=>setDay(!isDay)}>
-        Change
-      </button>
+      <Dinner dishName="Mutton" sweetName="Vanilla"/>
+      <hr />
+      <Dinner dishName="Beef" sweetName="Choclate"/>
+      <hr />
+      <Dinner dishName="Chicken" sweetName="Crunch"/>
+      <hr />
+      <State />
 
     </div>
   );
