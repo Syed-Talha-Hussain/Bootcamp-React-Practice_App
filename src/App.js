@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 // import Dinner from './dinner';
-import State from './state';
+// import State from './state';
 
 function App() {
   return (
     <div className="container">
+      <h1>Hello World</h1>
 
       {/* <Dinner dishName="Mutton" sweetName="Vanilla"/>
       <hr />
@@ -13,7 +14,8 @@ function App() {
       <hr />
       <Dinner dishName="Chicken" sweetName="Crunch"/>
       <hr /> */}
-      <State />
+      {/* <State /> */}
+      
 
     </div>
   );
