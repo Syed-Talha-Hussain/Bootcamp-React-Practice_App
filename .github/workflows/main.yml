@@ -30,13 +30,13 @@ jobs:
     #   uses: borales/actions-yarn@v2.0.0
     #   with:
     #     cmd: install # will run `yarn install` command
-      - name: Run npm install
-        run: npm install
-        
-      - name: Build Code
-        run: |
-         echo Building code,
-         npm run-script build
+    - name: Run npm install
+      run: npm install
+
+    - name: Build Code
+      run: |
+        echo Building code,
+        npm run-script build
     
     # - name: Creating Build
     #   run: yarn build
