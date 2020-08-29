@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Dinner from './dinner';
-import State from './state';
+import Dinner from './Dinner';
+import State from './State';
 
 function App() {
   return (
