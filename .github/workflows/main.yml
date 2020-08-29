@@ -18,16 +18,16 @@ jobs:
       with:
         node-version: 12  
  
-    # Runs a set of commands using the runners shell
-    # - name: Github action for yarn
-    #   uses: borales/actions-yarn@v2.0.0
-    #   with:
-    #     cmd: install # will run `yarn install` command
-    
-    - name: Installing surge
-      uses: actions/setup-node@v1
+    - name: Github action for yarn
+      uses: Borales/actions-yarn@v2.1.0
       with:
-        node-version: 8
-    - run: npm install --global surge
-    - name: Deploying Using Surge
-      run: surge ./ http://bootcamp-react-practice.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        cmd: install # will run `yarn install` command
+    
+    - name: Creating Build
+      run: yarn build
+
+    - name: Installing Surge
+      run: npm install -g surge
+    
+    - name: Deploying on Surge
+      run: surge ./build http://bootcamp-react-practice.surge.sh --token ${{secrets.SURGE_TOKEN}}
