@@ -1,20 +1,20 @@
 import React from 'react';
 import './App.css';
-// import Dinner from './dinner';
-// import State from './state';
+import Dinner from './dinner';
+import State from './state';
 
 function App() {
   return (
     <div className="container">
-      <h1>Hello World</h1>
+      {/* <h1>Hello World</h1> */}
 
-      {/* <Dinner dishName="Mutton" sweetName="Vanilla"/>
+      <Dinner dishName="Mutton" sweetName="Vanilla"/>
       <hr />
       <Dinner dishName="Beef" sweetName="Choclate"/>
       <hr />
       <Dinner dishName="Chicken" sweetName="Crunch"/>
-      <hr /> */}
-      {/* <State /> */}
+      <hr />
+      <State />
       
 
     </div>
